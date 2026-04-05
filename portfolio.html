@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>박희정 | 풀스택 개발자</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=DM+Mono:wght@400;500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-logo">
+        <div class="nav-logo-badge">H</div>
+        heejeong.dev
+    </div>
+    <div class="nav-info">박희정 · oeo223@gmail.com · 010-8850-7041</div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#tech">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <!--<a href="#" class="nav-cta">이력서 다운로드</a>-->
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="about">
+    <div class="hero-inner">
+        <div class="hero-badge">풀스택 개발자 · AI 엔지니어</div>
+        <h1>데이터로 <span class="blue">가치</span>를<br>증명하는 <span class="purple">박희정</span>입니다</h1>
+        <p class="hero-sub">Spring Boot · Vue · Flask · Python을 넘나드는 풀스택 역량과 <br>데이터 분석·AI 모델링으로 실제 문제를 해결합니다.</p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn-brand">🗂 프로젝트 보기</a>
+            <a href="https://github.com/hee-03" target="_blank" class="btn-purple">GitHub ↗</a>
+            <!--<a href="#" class="btn-brand">이력서 다운로드</a>-->
+        </div>
+    </div>
+</section>
+
+<!-- TECH -->
+<section class="tech-section" id="tech">
+    <div class="section-header">
+        <h2 class="section-title">Tech Stack</h2>
+        <span class="section-label-tag">기술 스택</span>
+    </div>
+    <div class="tech-groups">
+        <div class="tech-group">
+            <div class="tech-group-title">Frontend</div>
+            <div class="tech-chips">
+                <span class="tech-chip chip-brand">Vue.js</span>
+                <span class="tech-chip chip-brand">HTML/CSS</span>
+                <span class="tech-chip chip-default">JavaScript</span>
+                <span class="tech-chip chip-default">Ajax</span>
+            </div>
+        </div>
+        <div class="tech-group">
+            <div class="tech-group-title">Backend</div>
+            <div class="tech-chips">
+                <span class="tech-chip chip-brand">Spring Boot</span>
+                <span class="tech-chip chip-blue">Flask</span>
+                <span class="tech-chip chip-default">Java</span>
+                <span class="tech-chip chip-default">Node.js</span>
+                <span class="tech-chip chip-default">REST API</span>
+            </div>
+        </div>
+        <div class="tech-group">
+            <div class="tech-group-title">AI / Data</div>
+            <div class="tech-chips">
+                <span class="tech-chip chip-green">Python</span>
+                <span class="tech-chip chip-green">Streamlit</span>
+                <span class="tech-chip chip-default">Pandas</span>
+                <span class="tech-chip chip-pink">Scikit-learn</span>
+                <span class="tech-chip chip-pink">XGBoost</span>
+                <span class="tech-chip chip-pink">SHAP</span>
+            </div>
+        </div>
+        <div class="tech-group">
+            <div class="tech-group-title">Tools</div>
+            <div class="tech-chips">
+                <span class="tech-chip chip-purple">Git / GitHub</span>
+                <span class="tech-chip chip-default">Docker</span>
+                <span class="tech-chip chip-default">MyBatis</span>
+                <span class="tech-chip chip-default">Jupyter</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <span class="section-label-tag">주요 프로젝트</span>
+    </div>
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <div class="card-thumb" style="background:linear-gradient(135deg,#EFF4FF 0%,#E0EBFF 100%)">
+                <video width="500" height="500" controls>
+                    <source src="fraud_detection_video.mp4" type="video/mp4">
+                    브라우저가 video 태그를 지원하지 않습니다.
+                </video>
+                <span class="card-thumb-label">웹 서비스 구동 화면</span>
+            </div>
+            <div class="card-body">
+                <div class="card-priority">PROJECT 01 · FEATURED</div>
+                <div class="card-title">금융 이상 거래 탐지 웹서비스</div>
+                <p class="card-desc">AI 기반 실시간 이상 거래 탐지와 SHAP 분석을 통한 투명한 금융 보안 관제 서비스</p>
+                <p class="card-desc">Spring Boot + Vue + Flask + XGBoost를 결합한 엔드투엔드 이상 거래 탐지 시스템. 팀원 5명과 협업하여 프론트엔드부터 AI 추론까지 전 과정 구현.</p>
+                <div class="badge-blue">ROLE</div><p class="card-desc">시스템 아키텍처 설계, Flask 기반 AI 분석 서버 구축 및 SHAP 시각화 로직 구현 (팀 프로젝트 / 3인)</p>
+                <div class="badge-blue">TECH</div><p class="card-desc">Python, Flask, XGBoost, SHAP, Spring Boot, Vue.js, MyBatis</p>
+                <div class="badge-blue">핵심 성과</div>
+                <p class="card-desc">분석 시각화: SHAP Value를 도입하여 AI가 해당 거래를 '이상'으로 판단한 핵심 변수를 관리자 대시보드에 실시간 시각화</p>
+                <p class="card-desc">풀스택 완결성: Spring Boot(백엔드)와 Vue.js(프론트엔드)를 연동하여 실제 운영 가능한 수준의 CRUD 기능 및 보안 관제 UI 구축</p>
+                <div class="card-actions"><a href="https://hee-03.github.io/Fraud-Detection-Web-Service/" class="btn-card btn-card-brand">상세 보기</a></div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="card-thumb" style="background:linear-gradient(135deg,#EDFAE5 0%,#DDF3CF 100%)">
+                <video width="500" height="500" controls>
+                    <source src="ev_price_pred_video.mp4" type="video/mp4">
+                    브라우저가 video 태그를 지원하지 않습니다.
+                </video>
+                <span class="card-thumb-label">웹 서비스 구동 화면</span>
+            </div>
+            <div class="card-body">
+                <div class="card-priority">PROJECT 02 · FEATURED</div>
+                <div class="card-title">전기차 가격 예측 모델 & 서비스</div>
+                <p class="card-desc">제원 데이터와 브랜드 가치를 결합한 AI 기반 전기차 적정 가격 예측 서비스</p>
+                <p class="card-desc">103개 성능 데이터를 기반으로 릿지 회귀 모델 구축. Streamlit으로 인터랙티브 서비스화하여 변수 중요도 시각화 및 가격 예측 기능 제공.</p>
+                <div class="badge-green">ROLE</div><p class="card-desc">데이터 수집, EDA, 회귀 모델 설계 및 웹 대시보드 배포 (개인 프로젝트)</p>
+                <div class="badge-green">TECH</div><p class="card-desc">Python, Scikit-learn, Ridge, Streamlit, Pandas</p>
+                <div class="badge-green">핵심 성과</div>
+                <p class="card-desc">모델 성능: 릿지 회귀(Ridge) 활용, R² Score 0.958 달성</p>
+                <p class="card-desc">오차 범위: RMSE 기준 초기 예측가격 약 1,500만원 -> 920만원 ->약 700만원 수준으로 정밀화</p>
+                <div class="card-actions"><a href="https://github.com/hee-03/ml_project" class="btn-card btn-card-brand">상세 보기</a>
+                    <a href="https://mlproject-ev-price-prediction.streamlit.app/" class="btn-card btn-card-ghost">시연해보기(Streamlit)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="card-thumb" style="background:linear-gradient(135deg,#F8EFFE 0%,#F4D2FB 100%)">
+                <video width="500" height="500" controls>
+                    <source src="fraud_detection_ai_video.mp4" type="video/mp4">
+                    브라우저가 video 태그를 지원하지 않습니다.
+                </video>
+                <span class="card-thumb-label">웹 서비스 구동 화면</span>
+            </div>
+            <div class="card-body">
+                <div class="card-priority">PROJECT 03 · FEATURED</div>
+                <div class="card-title">금융 이상 거래 탐지 — AI 심화 분석</div>
+                <p class="card-desc">XAI(SHAP) 기술을 적용하여 판단 근거를 시각화한 실시간 금융 이상 거래 탐지 및 관제 솔루션</p>
+                <p class="card-desc">이상 거래 탐지 프로젝트 심화편. SHAP 기법으로 XGBoost 모델의 판단 근거를 시각화하여 모델 신뢰성 및 설명 가능성 강화.</p>
+                <div class="badge-pink">ROLE</div><p class="card-desc">시스템 아키텍처 설계, Flask 기반 AI 분석 서버 구축 및 SHAP 활용 판단 근거 시각화 로직 구현 (팀 프로젝트 / 3인)</p>
+                <div class="badge-pink">TECH</div><p class="card-desc">Python, XGBoost, SHAP, Flask, Spring Boot, Vue.js, MyBatis</p>
+                <div class="badge-pink">핵심 성과</div>
+                <p class="card-desc">탐지 성능: XGBoost 모델 최적화를 통해 복잡한 금융 거래 패턴 내 이상 징후를 높은 정밀도로 탐지</p>
+                <p class="card-desc">해석 가능성 확보: SHAP 라이브러리를 활용하여 AI의 탐지 원인을 수치화하고, 이를 관리자 페이지에 그래프로 시각화하여 운영 신뢰도 제고</p>
+                <div class="card-actions"><a href="https://hee-03.github.io/fraud_detection/" class="btn-card btn-card-brand">상세 보기</a></div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="card-thumb" style="background:linear-gradient(135deg,#F0F4FF 0%,#E5EDFF 100%)">
+                <video width="500" height="500" controls>
+                    <source src="PPE_Video.mp4" type="video/mp4">
+                    브라우저가 video 태그를 지원하지 않습니다.
+                </video>
+                <span class="card-thumb-label">웹 서비스 구동 화면</span>
+            </div>
+            <div class="card-body">
+                <div class="card-priority">PROJECT 04 · FEATURED</div>
+                <div class="card-title">안전장비 착용 감지 서비스</div>
+                <p class="card-desc">실시간 객체 탐지 모델(YOLO)의 정확도 검증 및 엣지 케이스 테스트를 통한 시스템 신뢰성 확보</p>
+                <p class="card-desc">YOLO 기반 객체 탐지 모델의 최종 QA 수행. 다양한 시나리오에 대한 테스트 케이스를 설계하고 버그 리포트 작성으로 모델 안정성 기여.</p>
+                <div class="badge-blue">ROLE</div><p class="card-desc">프로젝트 최종 단계 QA(Quality Assurance) 담당, 테스트 시나리오 작성 및 모델 성능 검증 ( 팀 프로젝트 / 5인)</p>
+                <div class="badge-blue">TECH</div><p class="card-desc">YOLO, PySide6, EasyOCR</p>
+                <div class="badge-blue">핵심 성과</div>
+                <p class="card-desc">UI/UX 안정성 검토: PySide6 기반 대시보드의 실시간 영상 송출 지연 시간 및 알림 시스템의 정상 작동 여부 전수 점검</p>
+                <p class="card-desc">최종 배포 승인: 프로젝트 막바지 단계에서 발견된 버그를 리포팅하고, 수정 사항을 재검증하여 서비스 배포 전 최종 품질 승인 수행</p>
+                <div class="card-actions"><a href="https://hee-03.github.io/ppe-guard-portfolio/" class="btn-card btn-card-brand">상세 보기</a></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- OTHER
+<section class="other-section">
+    <div class="section-header">
+        <h2 class="section-title">Other Experiences</h2>
+        <span class="section-label-tag">기타 경험</span>
+    </div>
+    <div class="other-list">
+        <div class="other-item">
+            <div class="other-icon">🦺</div>
+            <div>
+                <div class="other-title">PPEGuard — 안전장비 착용 감지 QA</div>
+                <div class="other-desc">YOLO 기반 객체 탐지 모델의 최종 QA 수행. 다양한 시나리오에 대한 테스트 케이스를 설계하고 버그 리포트 작성으로 모델 안정성 기여.</div>
+                <div class="other-chips"><span class="card-tag">#YOLO</span><span class="card-tag">#QA</span><span class="card-tag">#TestCase</span></div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- FOOTER -->
+<footer id="contact">
+    <div>
+        <div class="footer-name">박희정</div>
+        <div class="footer-role">풀스택 개발자 · AI 엔지니어</div>
+        <div class="footer-contacts">
+            <span class="footer-contact">📧 <a href="oeo223@gmail.com">oeo223@gmail.com</a></span>
+            <span class="footer-contact">📱 010-8850-7041</span>
+            <span class="footer-contact">💻 <a href="https://github.com/hee-03" target="_blank">GitHub ↗</a></span>
+        </div>
+    </div>
+    <!--
+    <div class="footer-right">
+        <div class="footer-highlights">
+            <span class="fh fh-blue">Brand</span>
+            <span class="fh fh-green">Green</span>
+            <span class="fh fh-pink">Pink</span>
+        </div>
+        <div style="font-family:'DM Mono',monospace;font-size:0.65rem;color:rgba(255,255,255,0.18);letter-spacing:0.1em;">PORTFOLIO 2025</div>
+        <div class="footer-copy">Brand System Design · Made with ✦</div>
+    </div> -->
+</footer>
+
+</body>
+</html>
